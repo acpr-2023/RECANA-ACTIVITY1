@@ -16,14 +16,11 @@
   background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-  background: #6e93f7;
+  background: #383838; /* scroll bar*/
   border-radius: 12px;
   transition: all 0.3s ease;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #4070f4;
-}
 /* navbar styling */
 nav {
   position: fixed;
@@ -35,7 +32,7 @@ nav {
   background-color: #4d5c61;
 }
 nav.sticky {
-  background: #4070f4;
+  background: #383838;
   padding: 13px 0;
 }
 nav .navbar {
@@ -68,29 +65,27 @@ nav .navbar .menu li {
 .navbar .menu a {
   font-size: 18px;
   font-weight: 500;
-  color: #0e2431;
+  color: #d1dfdf;
   padding: 6px 0;
   transition: all 0.4s ease;
 }
 .navbar .menu a:hover {
-  color: #4070f4;
+  color: white;
 }
 .menu {
   gap: 3rem;
 }
 nav.sticky .menu a {
-  color: #fff;
+  color: #d1dfdf; /*second nav bar font color*/
 }
-nav.sticky .menu a:hover {
-  color: #0e2431;
-}
+
 .navbar .media-icons a {
-  color: #4070f4;
-  font-size: 18px;
-  margin: 0 6px;
+  color: #d1dfdf;
+  font-size: 25px;
+  margin: 0 10px;
 }
 nav.sticky .media-icons a {
-  color: #fff;
+  color: #d1dfdf;
 }
 
 /* Side Navigation Menu Button CSS */
@@ -106,7 +101,7 @@ nav .menu-btn,
   display: none;
 }
 nav .menu-btn {
-  color: #4070f4;
+  color: #6bbdeb;
 }
 nav.sticky .menu-btn {
   color: #fff;
@@ -156,10 +151,10 @@ img {
 
 .home .text-one {
   font-size: 25px;
-  color: #0e2431;
+  color: #383838;
 }
 .home .text-two {
-  color: #0e2431;
+  color: #383838;
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
@@ -167,12 +162,12 @@ img {
 .home .text-three {
   font-size: 40px;
   margin: 5px 0;
-  color: #4070f4;
+  color: #4d5c61;
 }
 .home .text-four {
   font-size: 23px;
   margin: 5px 0;
-  color: #0e2431;
+  color: #383838;
 }
 .home .button {
   margin: 14px 0;
@@ -183,16 +178,16 @@ img {
   border-radius: 6px;
   font-size: 25px;
   font-weight: 400;
-  background: #4070f4;
+  background: #4d5c61;
   color: #fff;
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
 }
 .home .button button:hover {
-  border-color: #4070f4;
+  border-color: #4d5c61;
   background-color: #fff;
-  color: #4070f4;
+  color: #4d5c61;
 }
 
 /* About Section Styling */
@@ -213,11 +208,11 @@ section .content {
 }
 section .title {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 40px;
 }
 section .title span {
-  color: #0e2431;
+  color: #383838;
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -229,7 +224,7 @@ section .title span::after {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #4070f4;
+  background: red;
   left: 0;
   bottom: 0;
 }
@@ -252,14 +247,14 @@ section .title span::after {
   width: 55%;
 }
 section .topic {
-  color: #0e2431;
+  color: #383838;
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 .about-details .right p {
   text-align: justify;
-  color: #0e2431;
+  color: #383838;
 }
 section .button {
   margin: 16px 0;
@@ -270,70 +265,121 @@ section .button button {
   border-radius: 4px;
   font-size: 25px;
   font-weight: 400;
-  background: #4070f4;
+  background: #4d5c61;
   color: #fff;
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 section .button button:hover {
-  border-color: #4070f4;
+  border-color: #4d5c61;
   background-color: #fff;
-  color: #4070f4;
+  color: #4d5c61;
 }
-
-/* My Skills CSS */
-.skills {
-  background: #f0f8ff;
-}
-.skills .content {
-  padding: 40px 0;
-}
-.skills .skills-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.skills-details .text {
-  width: 50%;
-}
-.skills-details p {
-  color: #0e2431;
-  text-align: justify;
-}
-.skills .skills-details .experience {
-  display: flex;
-  align-items: center;
-  margin: 0 10px;
-}
-.skills-details .experience .num {
-  color: #0e2431;
-  font-size: 80px;
-}
-.skills-details .experience .exp {
-  color: #0e2431;
-  margin-left: 20px;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 6px;
-}
-.skills-details .boxes {
-  width: 45%;
+.about-details {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
-.skills-details .box {
-  width: calc(100% / 2 - 20px);
-  margin: 20px 0;
+
+.right {
+  flex: 1;
+  margin-right: 20px; /* Adjust spacing between text and boxes */
 }
-.skills-details .boxes .topic {
-  font-size: 20px;
-  color: #4070f4;
+
+.experience,
+.education {
+  flex: 1;
+  background-color: #f2f2f2; /* Background color for the boxes */
+  padding: 20px;
+  margin-bottom: 20px; /* Adjust spacing between boxes */
 }
-.skills-details .boxes .per {
-  font-size: 60px;
-  color: #4070f4;
+
+.experience h2,
+.education h2 {
+  margin-top: 0;
+}
+.about {
+  background-image: url("assets/about_bg.gif"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Text color for better visibility against the background */
+  padding: 50px 0; /* Adjust padding as needed */
+}
+
+.about-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right {
+  flex: 1;
+  margin-right: 20px; /* Adjust spacing between text and boxes */
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 5rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
 }
 
 /* My Services CSS */
@@ -353,13 +399,13 @@ section .button button:hover {
   transition: all 0.4s ease;
 }
 .services .boxes .box:hover {
-  background: #4070f4;
+  background: #4d5c61;
   color: #fff;
 }
 .services .boxes .box .icon {
   height: 50px;
   width: 50px;
-  background: #4070f4;
+  background: #4d5c61;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -370,11 +416,11 @@ section .button button:hover {
 }
 .boxes .box:hover .icon {
   background-color: #fff;
-  color: #4070f4;
+  color: #4d5c61;
 }
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p {
-  color: #0e2431;
+  color: #383838;
   transition: all 0.4s ease;
 }
 .services .boxes .box:hover .topic,
@@ -397,7 +443,7 @@ section .button button:hover {
 
 /* Footer CSS */
 footer {
-  background: #4070f4;
+  background: #4d5c61;
   padding: 15px 0;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -420,7 +466,7 @@ footer .text span a:hover {
   bottom: 20px;
   right: 20px;
   color: #fff;
-  background: #4070f4;
+  background: #4d5c61;
   padding: 7px 12px;
   font-size: 18px;
   border-radius: 6px;

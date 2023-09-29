@@ -10,6 +10,7 @@
     flex-direction: column; /* Stack content vertically */
     align-items: center; /* Center everything vertically */
     text-align: center; /* Center text horizontally */
+    margin-top: 80px;
   }
 
   .section__pic-container {
