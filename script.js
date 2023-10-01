@@ -23,7 +23,7 @@ menuBtn.onclick = function () {
   menuBtn.style.opacity = "0";
   menuBtn.style.pointerEvents = "none";
   body.style.overflow = "hidden";
-  scrollBtn.style.pointerEvents = "none";
+  scrollBtn.style.pointerEvents = "auto";
 };
 cancelBtn.onclick = function () {
   navBar.classList.remove("active");
@@ -33,12 +33,13 @@ cancelBtn.onclick = function () {
   scrollBtn.style.pointerEvents = "auto";
 };
 
-// Side Navigation Bar Close While We Click On Navigation Links
 let navLinks = document.querySelectorAll(".menu li a");
 for (var i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener("click", function () {
     navBar.classList.remove("active");
     menuBtn.style.opacity = "1";
     menuBtn.style.pointerEvents = "auto";
+    body.style.overflow = "auto"; // Restore scrolling on the page
+    scrollBtn.style.pointerEvents = "auto"; // Make the scroll button available
   });
 }

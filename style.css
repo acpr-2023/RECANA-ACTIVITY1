@@ -8,6 +8,9 @@
   scroll-behavior: smooth;
   /*border: 1px solid red; */
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
@@ -80,6 +83,10 @@ nav.sticky .menu a {
   color: #d1dfdf; /*second nav bar font color*/
 }
 
+.menu-btn {
+  color: #d1dfdf;
+}
+
 .navbar .media-icons a {
   color: #d1dfdf;
   font-size: 25px;
@@ -102,7 +109,7 @@ nav .menu-btn,
   display: none;
 }
 nav .menu-btn {
-  color: #6bbdeb;
+  color: #d1dfdf;
 }
 nav.sticky .menu-btn {
   color: #fff;
@@ -307,6 +314,7 @@ section .button button:hover {
   flex-direction: column;
   align-items: center; /* Center the container horizontally */
   justify-content: center; /* Center the container vertically */
+  margin-bottom: 0;
 }
 
 .experience-sub-title {
@@ -321,6 +329,7 @@ section .button button:hover {
 .experience-details-container {
   display: flex;
   justify-content: center;
+  align-items: center; /* Center vertically */
   flex-direction: column;
   text-align: center;
 }
@@ -333,19 +342,22 @@ section .button button:hover {
 .article-container {
   display: flex;
   text-align: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 3rem;
   justify-content: space-around;
-  grid-template-columns: 2;
+  gap: 3rem;
   width: 80rem;
 }
 
-article {
+.article {
   display: flex;
   width: 10rem;
   justify-content: space-around;
   gap: 0.5rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 40px; /* Set the desired width */
+  height: 40px; /* Set the desired height */
 }
 
 .text {
@@ -356,6 +368,11 @@ article {
 
 #project {
   position: relative;
+  background-image: url("assets/about_bg.gif");
+  background-size: cover;
+  background-position: center;
+  color: #4d5c61; /* Text color for better visibility against the background */
+  padding: 50px 0; /* Adjust padding as needed */
 }
 
 .color-container {
@@ -371,15 +388,14 @@ article {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: #383838;
 }
 
 .project-btn {
-  color: black;
+  color: #383838;
   border-color: rgb(163, 163, 163);
 }
 
-/* My project CSS */
 .project .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -398,7 +414,7 @@ article {
 }
 
 .project .boxes .box:hover {
-  background: #4070f4;
+  background: #4d5c61;
   color: #fff;
 }
 
@@ -435,7 +451,7 @@ article {
 }
 
 .project .boxes .box:hover {
-  background: #4070f4;
+  background: #4d5c61;
   color: #fff;
 }
 
@@ -486,7 +502,7 @@ article {
 }
 
 .project .boxes .box:hover {
-  background: #4070f4;
+  background: #4d5c61;
   color: #fff;
 }
 
@@ -519,12 +535,7 @@ article {
 }
 
 .project .boxes .box .buttons .btn.primary {
-  background-color: #4070f4;
-  color: #fff;
-}
-
-.project .boxes .box .buttons .btn.secondary {
-  background-color: #0e2431;
+  background-color: #383838;
   color: #fff;
 }
 
@@ -546,7 +557,7 @@ article {
 
 /* Contact Me CSS */
 .contact {
-  background: #f0f8ff;
+  background: #d1dfdf;
 }
 .contact .content {
   margin: 0 auto;
@@ -568,15 +579,13 @@ footer {
 footer .text span {
   font-size: 17px;
   font-weight: 400;
-  color: #fff;
+  color: #383838;
 }
 footer .text span a {
   font-weight: 500;
-  color: #fff;
+  color: #ceeef9;
 }
-footer .text span a:hover {
-  text-decoration: underline;
-}
+
 /* Scroll TO Top Button CSS */
 .scroll-button a {
   position: fixed;

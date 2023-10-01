@@ -69,7 +69,7 @@
     margin: 10px 0;
   }
   nav.sticky .menu a:hover {
-    color: #4070f4;
+    color: #d1dfdf;
   }
   nav .navbar .media-icons {
     display: none;
@@ -84,16 +84,34 @@
   .home .text-three {
     font-size: 35px;
   }
-  @media screen and (max-width: 768px) {
-    /* Adjust styles for screens with a maximum width of 768px */
+  @media screen and (max-width: 1220px) {
+    /* Adjust styles for screens with a maximum width of 1220px */
     .article-container {
       width: 100%; /* Make the container full width */
       padding: 1rem; /* Add some padding for spacing */
     }
 
-    article {
+    .article {
       width: 100%; /* Make each article full width */
       margin-bottom: 2rem; /* Add space between articles */
+    }
+  }
+
+  @media (max-width: 750px) {
+    #experience {
+      /* Adjust styles for smaller screens here */
+      justify-content: flex-start; /* Change vertical alignment, for example */
+    }
+
+    .experience-sub-title {
+      /* Adjust font size or other styles for smaller screens */
+      font-size: 1.5rem;
+    }
+
+    .article-container {
+      /* Adjust layout for smaller screens, e.g., stack articles vertically */
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -103,18 +121,5 @@
   }
   .contact .text {
     width: 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .home .text-two {
-    font-size: 55px;
-  }
-  .home .text-three {
-    font-size: 33px;
-  }
-  .skills-details .boxes .per {
-    font-size: 50px;
-    color: #4070f4;
   }
 }
