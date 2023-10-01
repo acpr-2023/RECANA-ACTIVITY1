@@ -31,7 +31,7 @@
     width: 90%;
     margin: 40px 0;
   }
-  .services .boxes .box {
+  .project .boxes .box {
     margin: 20px 0;
     width: calc(100% / 2 - 20px);
   }
@@ -84,21 +84,20 @@
   .home .text-three {
     font-size: 35px;
   }
-  .skills .skills-details {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  @media screen and (max-width: 768px) {
+    /* Adjust styles for screens with a maximum width of 768px */
+    .article-container {
+      width: 100%; /* Make the container full width */
+      padding: 1rem; /* Add some padding for spacing */
+    }
+
+    article {
+      width: 100%; /* Make each article full width */
+      margin-bottom: 2rem; /* Add space between articles */
+    }
   }
-  .skills-details .text {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .skills-details .boxes {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .services .boxes .box {
+
+  .project .boxes .box {
     margin: 20px 0;
     width: 100%;
   }

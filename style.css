@@ -6,7 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
-  border: 1px solid red;
+  /*border: 1px solid red; */
 }
 
 /* Custom Scroll Bar CSS */
@@ -148,8 +148,6 @@ img {
   flex: 1;
 }
 
-/* The rest of your CSS remains the same */
-
 .home .text-one {
   font-size: 25px;
   color: #383838;
@@ -164,11 +162,6 @@ img {
   font-size: 40px;
   margin: 5px 0;
   color: #4d5c61;
-}
-.home .text-four {
-  font-size: 23px;
-  margin: 5px 0;
-  color: #383838;
 }
 .home .button {
   margin: 14px 0;
@@ -218,16 +211,7 @@ section .title span {
   position: relative;
   padding-bottom: 8px;
 }
-section .title span::before,
-section .title span::after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: red;
-  left: 0;
-  bottom: 0;
-}
+
 section .title span::after {
   bottom: -7px;
   width: 70%;
@@ -238,8 +222,8 @@ section .title span::after {
   width: 45%;
 }
 .about .left img {
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 500px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -258,6 +242,7 @@ section .topic {
 }
 section .button {
   margin: 16px 0;
+  margin-bottom: 25px;
 }
 section .button button {
   outline: none;
@@ -280,12 +265,19 @@ section .button button:hover {
   display: flex;
   flex-wrap: wrap;
 }
-
+.about-icon i,
+.education i,
+.experience i {
+  color: #4d5c61; /* Set the desired color for the icons */
+}
 .right {
   flex: 1;
   margin-right: 20px; /* Adjust spacing between text and boxes */
 }
 
+.experience-details-container {
+  margin-top: 10px;
+}
 .experience,
 .education {
   flex: 1;
@@ -302,24 +294,19 @@ section .button button:hover {
   background-image: url("assets/about_bg.gif"); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
-  color: #fff; /* Text color for better visibility against the background */
+  color: #4d5c61; /* Text color for better visibility against the background */
   padding: 50px 0; /* Adjust padding as needed */
-}
-
-.about-details {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.right {
-  flex: 1;
-  margin-right: 20px; /* Adjust spacing between text and boxes */
 }
 
 /* EXPERIENCE SECTION */
 
 #experience {
   position: relative;
+  background-color: #d1dfdf;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the container horizontally */
+  justify-content: center; /* Center the container vertically */
 }
 
 .experience-sub-title {
@@ -339,6 +326,7 @@ section .button button:hover {
 }
 
 .details-container {
+  margin-top: 30px;
   margin-bottom: auto;
 }
 
@@ -349,9 +337,8 @@ section .button button:hover {
   flex-direction: row;
   gap: 3rem;
   justify-content: space-around;
-  background: #4d5c61;
-  grid-template-columns: auto;
-  width: 50rem;
+  grid-template-columns: 2;
+  width: 80rem;
 }
 
 article {
@@ -361,13 +348,13 @@ article {
   gap: 0.5rem;
 }
 
-article .icon {
-  cursor: default;
+.text {
+  color: #383838;
 }
 
 /* PROJECTS SECTION */
 
-#projects {
+#project {
   position: relative;
 }
 
@@ -392,16 +379,14 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* My Services CSS */
-
-/* My Services CSS */
-.services .boxes {
+/* My project CSS */
+.project .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.services .boxes .box {
+.project .boxes .box {
   margin: 20px 0;
   width: calc(100% / 3 - 20px);
   text-align: center;
@@ -412,12 +397,12 @@ article .icon {
   transition: all 0.4s ease;
 }
 
-.services .boxes .box:hover {
+.project .boxes .box:hover {
   background: #4070f4;
   color: #fff;
 }
 
-.services .boxes .box .icon {
+.project .boxes .box .icon {
   height: 300px;
   width: 300px;
   background: #4d5c61;
@@ -431,14 +416,14 @@ article .icon {
   position: relative; /* Add position:relative for absolute positioning of the image */
 }
 
-/* My Services CSS */
-.services .boxes {
+/* My project CSS */
+.project .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.services .boxes .box {
+.project .boxes .box {
   margin: 20px 0;
   width: calc(100% / 3 - 20px);
   text-align: center;
@@ -449,12 +434,12 @@ article .icon {
   transition: all 0.4s ease;
 }
 
-.services .boxes .box:hover {
+.project .boxes .box:hover {
   background: #4070f4;
   color: #fff;
 }
 
-.services .boxes .box .icon {
+.project .boxes .box .icon {
   height: 100px;
   width: 100px;
   background: #4d5c61;
@@ -469,7 +454,7 @@ article .icon {
 }
 
 /* Style for the image inside the icon box */
-.services .boxes .box .icon img {
+.project .boxes .box .icon img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -483,13 +468,13 @@ article .icon {
   transition: all 0.4s ease;
 }
 
-.services .boxes {
+.project .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.services .boxes .box {
+.project .boxes .box {
   margin: 20px 0;
   width: calc(100% / 3 - 20px);
   text-align: center;
@@ -500,12 +485,12 @@ article .icon {
   transition: all 0.4s ease;
 }
 
-.services .boxes .box:hover {
+.project .boxes .box:hover {
   background: #4070f4;
   color: #fff;
 }
 
-.services .boxes .box .icon {
+.project .boxes .box .icon {
   height: 300px;
   width: 300px;
   background: #4d5c61;
@@ -520,11 +505,11 @@ article .icon {
 }
 
 /* Style for the buttons */
-.services .boxes .box .buttons {
+.project .boxes .box .buttons {
   margin-top: 20px;
 }
 
-.services .boxes .box .buttons .btn {
+.project .boxes .box .buttons .btn {
   display: inline-block;
   margin-right: 10px;
   padding: 10px 20px;
@@ -533,29 +518,29 @@ article .icon {
   transition: background-color 0.4s ease;
 }
 
-.services .boxes .box .buttons .btn.primary {
+.project .boxes .box .buttons .btn.primary {
   background-color: #4070f4;
   color: #fff;
 }
 
-.services .boxes .box .buttons .btn.secondary {
+.project .boxes .box .buttons .btn.secondary {
   background-color: #0e2431;
   color: #fff;
 }
 
-.services .boxes .box .buttons .btn:hover {
+.project .boxes .box .buttons .btn:hover {
   background-color: #fff;
   color: #4070f4;
 }
 
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p {
+.project .boxes .box:hover .topic,
+.project .boxes .box:hover p {
   color: #0e2431;
   transition: all 0.4s ease;
 }
 
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p {
+.project .boxes .box:hover .topic,
+.project .boxes .box:hover p {
   color: #fff;
 }
 
