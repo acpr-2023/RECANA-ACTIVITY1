@@ -1,5 +1,5 @@
 /* Responsive Media Query */
-@media (max-width: 1190px) {
+@media (max-width: 1000px) {
   .home {
     flex-direction: column; /* Stack content vertically */
     align-items: center; /* Center everything vertically */
