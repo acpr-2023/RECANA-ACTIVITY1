@@ -137,17 +137,23 @@ nav.sticky .menu-btn {
   width: 90%;
   margin: 0 auto;
   text-align: left;
-  margin-top: 50px; /* Add margin to space out the sections */
+  margin-top: 50px;
 }
 
 .section__pic-container {
   flex: 1;
-  padding: 20px; /* Add padding for spacing */
+  padding: 20px;
 }
 
-img {
+.profile-container {
   max-width: 50%;
   height: 50%;
+}
+
+.profile-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .text {
@@ -158,20 +164,24 @@ img {
   font-size: 25px;
   color: #383838;
 }
+
 .home .text-two {
   color: #383838;
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
+
 .home .text-three {
   font-size: 40px;
   margin: 5px 0;
   color: #4d5c61;
 }
+
 .home .button {
   margin: 14px 0;
 }
+
 .home .button button {
   outline: none;
   padding: 8px 16px;
@@ -184,6 +194,7 @@ img {
   border: 2px solid transparent;
   transition: all 0.4s ease;
 }
+
 .home .button button:hover {
   border-color: #4d5c61;
   background-color: #fff;
@@ -287,9 +298,9 @@ section .button button:hover {
 .experience,
 .education {
   flex: 1;
-  background-color: #f2f2f2; /* Background color for the boxes */
+  background-color: #f2f2f2;
   padding: 20px;
-  margin-bottom: 20px; /* Adjust spacing between boxes */
+  margin-bottom: 20px;
 }
 
 .experience h2,
@@ -297,11 +308,11 @@ section .button button:hover {
   margin-top: 0;
 }
 .about {
-  background-image: url("assets/about_bg.gif"); /* Replace with your image URL */
+  background-image: url("assets/about_bg.gif");
   background-size: cover;
   background-position: center;
-  color: #4d5c61; /* Text color for better visibility against the background */
-  padding: 50px 0; /* Adjust padding as needed */
+  color: #4d5c61;
+  padding: 50px 0;
 }
 
 /* EXPERIENCE SECTION */
@@ -311,8 +322,8 @@ section .button button:hover {
   background-color: #d1dfdf;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the container horizontally */
-  justify-content: center; /* Center the container vertically */
+  align-items: center;
+  justify-content: center;
   margin-bottom: 0;
 }
 
@@ -328,7 +339,7 @@ section .button button:hover {
 .experience-details-container {
   display: flex;
   justify-content: center;
-  align-items: center; /* Center vertically */
+  align-items: center;
   flex-direction: column;
   text-align: center;
 }
@@ -355,8 +366,8 @@ section .button button:hover {
 
 .icon {
   display: inline-block;
-  width: 40px; /* Set the desired width */
-  height: 40px; /* Set the desired height */
+  width: 40px;
+  height: 40px;
 }
 
 .text {
@@ -371,7 +382,7 @@ section .button button:hover {
   background-size: cover;
   background-position: center;
   color: #4d5c61; /* Text color for better visibility against the background */
-  padding: 50px 0; /* Adjust padding as needed */
+  padding: 50px 0;
 }
 
 .color-container {
@@ -516,7 +527,7 @@ section .button button:hover {
   color: #fff;
   margin: 0 auto 10px auto;
   overflow: hidden; /* Clip the image if it's larger than the box */
-  position: relative; /* Add position:relative for absolute positioning of the image */
+  position: relative;
 }
 
 /* Style for the buttons */
