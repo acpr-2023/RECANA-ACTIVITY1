@@ -625,7 +625,7 @@ section .button button:hover {
 }
 
 .contact-left button:hover {
-  background: linear-gradient(270deg, #fa7382, #ff9122);
+  background: green;
 }
 
 /* Footer CSS */
