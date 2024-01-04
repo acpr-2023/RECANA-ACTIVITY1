@@ -123,3 +123,10 @@
     width: 100%;
   }
 }
+
+@media (max-width: 600px) {
+  .contact-inputs,
+  .contact-left button {
+    width: 100%; /* Make inputs and button full-width */
+  }
+}
