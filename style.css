@@ -323,8 +323,7 @@ section .button button:hover {
   margin-bottom: 0;
 }
 
-.experience-sub-title,
-h2 {
+.experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
@@ -468,11 +467,11 @@ h2 {
   background: #4d5c61;
   border-radius: 50%;
   text-align: center;
-  line-height: 100px; 
+  line-height: 100px;
   color: #fff;
   margin: 0 auto 10px auto;
-  overflow: hidden; 
-  position: relative; 
+  overflow: hidden;
+  position: relative;
 }
 
 /* Style for the image inside the icon box */
