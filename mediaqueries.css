@@ -1,20 +1,19 @@
-
 @media (max-width: 1000px) {
   .home {
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .home-content {
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center everything vertically */
-    text-align: center; /* Center text horizontally */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-top: 80px;
   }
 
   .section__pic-container {
-    flex: none; /* Don't allow the image to grow; keep its size */
+    flex: none;
   }
 }
 @media (max-width: 1000px) {
@@ -85,31 +84,27 @@
     font-size: 35px;
   }
   @media screen and (max-width: 1220px) {
-    /* Adjust styles for screens with a maximum width of 1220px */
     .article-container {
-      width: 100%; /* Make the container full width */
-      padding: 1rem; /* Add some padding for spacing */
+      width: 100%;
+      padding: 1rem;
     }
 
     .article {
-      width: 100%; /* Make each article full width */
-      margin-bottom: 2rem; /* Add space between articles */
+      width: 100%;
+      margin-bottom: 2rem;
     }
   }
 
   @media (max-width: 750px) {
     #experience {
-      /* Adjust styles for smaller screens here */
-      justify-content: flex-start; /* Change vertical alignment, for example */
+      justify-content: flex-start;
     }
 
     .experience-sub-title {
-      /* Adjust font size or other styles for smaller screens */
       font-size: 1.5rem;
     }
 
     .article-container {
-      /* Adjust layout for smaller screens, e.g., stack articles vertically */
       flex-direction: column;
       align-items: center;
     }
@@ -127,6 +122,6 @@
 @media (max-width: 600px) {
   .contact-inputs,
   .contact-left button {
-    width: 100%; /* Make inputs and button full-width */
+    width: 100%;
   }
 }
