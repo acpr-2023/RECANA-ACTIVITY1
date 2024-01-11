@@ -568,7 +568,7 @@ section .button button:hover {
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background: linear-gradient(270deg, #d1dfdf, #4d5c61);
+
 }
 
 .contact-container {
