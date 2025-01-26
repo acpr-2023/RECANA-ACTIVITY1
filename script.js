@@ -13,6 +13,44 @@ window.onscroll = function () {
   }
 };
 
+const textThree = document.querySelector(".text-three");
+const phrases = ["Data Analyst", "Web Designer", "System Analyst,"];
+let phraseIndex = 0; // Tracks the current phrase index
+let charIndex = 0; // Tracks the current character being typed
+let isDeleting = false; // Tracks whether we are typing or deleting
+
+function typeAndDelete() {
+  const currentPhrase = phrases[phraseIndex];
+
+  // Adjust the text content based on typing or deleting
+  if (isDeleting) {
+    charIndex--;
+  } else {
+    charIndex++;
+  }
+
+  // Update the text content in the div
+  textThree.textContent = currentPhrase.substring(0, charIndex);
+
+  // Determine if we need to switch between typing and deleting
+  if (!isDeleting && charIndex === currentPhrase.length) {
+    // Pause before deleting
+    isDeleting = true;
+    setTimeout(typeAndDelete, 1000); // Pause for 1 second
+  } else if (isDeleting && charIndex === 0) {
+    // Move to the next phrase and start typing
+    isDeleting = false;
+    phraseIndex = (phraseIndex + 1) % phrases.length; // Loop back to the first phrase
+    setTimeout(typeAndDelete, 500); // Pause for 0.5 seconds before typing
+  } else {
+    // Continue typing or deleting
+    setTimeout(typeAndDelete, isDeleting ? 100 : 150); // Adjust speed here
+  }
+}
+
+// Start the animation
+typeAndDelete();
+
 // Side NavIgation Menu JS Code
 let body = document.querySelector("body");
 let navBar = document.querySelector(".navbar");
