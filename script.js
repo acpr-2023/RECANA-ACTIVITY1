@@ -14,7 +14,7 @@ window.onscroll = function () {
 };
 
 const textThree = document.querySelector(".text-three");
-const phrases = ["Data Analyst", "Web Designer", "System Analyst,"];
+const phrases = ["Data Analyst", "Web Developer", "System Analyst"];
 let phraseIndex = 0; // Tracks the current phrase index
 let charIndex = 0; // Tracks the current character being typed
 let isDeleting = false; // Tracks whether we are typing or deleting
